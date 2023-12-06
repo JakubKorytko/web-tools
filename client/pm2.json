@@ -1,0 +1,9 @@
+{
+    "name": "WebTools Client",
+    "script": "npm",
+    "args": "run serve",
+    "watch": true,
+    "watch_options": {
+        "followSymlinks": false
+    }
+}
