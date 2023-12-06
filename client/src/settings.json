@@ -1,0 +1,8 @@
+{
+    "serverData": {
+        "name": "http://localhost:3001",
+        "shortLink": "http://localhost:3001/short/",
+        "fileLink": "http://localhost:3001/file/",
+        "demo": true
+    }
+}
