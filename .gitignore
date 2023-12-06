@@ -129,3 +129,4 @@ dist
 /server/*.db
 /server/files/*
 !/server/files/.gitkeep
+build/
