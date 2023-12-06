@@ -1,0 +1,9 @@
+{
+    "script": "./server.js",
+    "watch": ["server.js", "node_modules", "auth.js", "database.js"],
+    "ignore_watch": ["data.db", "files"],
+    "watch_options": {
+        "followSymlinks": false
+    },
+    "name": "Webtools Server"
+}
