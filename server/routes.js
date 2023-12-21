@@ -18,7 +18,7 @@ router.post("/login", jsonParser, (req, res) => {
 router.post("/auth", jsonParser, (req, res) => {
     const decoded = decode(process.env.SECRET)(req.headers.authorization);
     if (decoded == false) res.send({res: false})
-    res.send({res: decoded.name})
+    else res.send({res: decoded.name})
 })
 
 router.post("/get", authorization, jsonParser, async (req, res) => {
