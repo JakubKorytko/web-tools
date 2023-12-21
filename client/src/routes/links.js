@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import '../css/main.css';
-import '../css/icons.css';
 import linkImage from "../gfx/link.png";
 import DeleteModal from '../components/deleteModal';
 import Navbar from '../components/navbar';
