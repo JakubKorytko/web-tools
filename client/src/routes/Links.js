@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import '../css/main.css';
 import linkImage from "../gfx/link.png";
-import DeleteModal from '../components/deleteModal';
-import Navbar from '../components/navbar';
-import ClipboardButton from '../components/clipboardButton';
-import Token from '../components/token';
+import DeleteModal from '../components/DeleteModal';
+import Navbar from '../components/Navbar';
+import ClipboardButton from '../components/ClipboardButton';
+import Token from '../components/Token';
 const settings = require("../settings.json");
 const serverName = settings.serverData.name;
 const isDemo = settings.demo;

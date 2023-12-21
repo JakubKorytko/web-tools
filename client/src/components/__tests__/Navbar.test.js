@@ -1,7 +1,7 @@
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 
-import Navbar from "./navbar";
+import Navbar from "../Navbar";
 
 let container = null;
 
@@ -20,10 +20,10 @@ test("back button visible when needed", () => {
     act(() => {
         render(<Navbar back={true} />, container)
     });
-    
+
     let backButtons = Array.from(container.querySelectorAll(".backButton"));
     expect(backButtons.length).toBe(1)
-    
+
     act(() => {
         render(<Navbar back={false} />, container)
     });

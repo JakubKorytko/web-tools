@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Loader from "../components/loader";
-import Token from "../components/token";
+import Loader from "../components/Loader";
+import Token from "../components/Token";
 
 const settings = require("../settings.json");
 const serverName = settings.serverData.name;

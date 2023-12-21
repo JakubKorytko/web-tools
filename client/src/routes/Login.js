@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import "../css/my-login.css";
-import "../css/main.css";
-import "../login-page-files/bootstrap.min.css";
+import "../login/my-login.css";
+import "../login/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle'
-import "../js/my-login"
-import Token from '../components/token';
+import "../login/my-login"
+import Token from '../components/Token';
 const settings = require("../settings.json");
 const serverName = settings.serverData.name;
 
@@ -43,7 +42,7 @@ const LoginPage = () => {
                         <div className="card-wrapper">
                             <div className="card fat">
                                 <div className="card-body">
-                                    <form method="POST" onSubmit={login} action="/boxes" className="my-login-validation" noValidate>
+                                    <form method="POST" onSubmit={login} action="/client/src/routes/Boxes" className="my-login-validation" noValidate>
                                         <div className="form-group">
                                             <label htmlFor="username">Username</label>
                                             <input id="username" type="text" className="form-control" name="username" required

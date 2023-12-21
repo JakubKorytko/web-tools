@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import linkImage from "../gfx/link.png";
 import folderImage from "../gfx/folder.png";
-import Navbar from '../components/navbar';
-import "../css/main.css";
+import Navbar from '../components/Navbar';
+import style from "./Boxes.style";
 
 const BoxesPage = () => {
         return (
@@ -18,7 +18,7 @@ const BoxesPage = () => {
                                 <div className="card bg-light text-dark">
                                     <img className="card-img" src={folderImage} alt="Upload" />
                                     <div className="card-img-overlay">
-                                        <h2 className="center bg-white" style={{ padding: "10px" }}>Files manager</h2>
+                                        <h2 className="bg-white" style={style.name}>Files manager</h2>
                                     </div>
                                 </div>
                             </a>
@@ -29,7 +29,7 @@ const BoxesPage = () => {
                                 <div className="card bg-light text-dark">
                                     <img className="card-img" src={linkImage} alt="Link" />
                                     <div className="card-img-overlay">
-                                        <h2 className="center bg-white" style={{ padding: "10px" }}>Link shortener</h2>
+                                        <h2 className="bg-white" style={style.name}>Link shortener</h2>
                                     </div>
                                 </div>
                             </a>

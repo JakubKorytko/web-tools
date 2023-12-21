@@ -7,11 +7,11 @@ import {
   Route,
   useParams
 } from "react-router-dom";
-import BoxesPage from "./routes/boxes";
-import FilesPage from "./routes/files";
-import LoginPage from "./routes/index";
-import LinksPage from "./routes/links";
-import Authorization from './routes/authorization';
+import BoxesPage from "./routes/Boxes";
+import FilesPage from "./routes/Files";
+import LoginPage from "./routes/Login";
+import LinksPage from "./routes/Links";
+import Authorization from './routes/Authorization';
 const settings = require("./settings.json").serverData;
 
 

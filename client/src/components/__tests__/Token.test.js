@@ -1,4 +1,4 @@
-import Token from "./token";
+import Token from "../Token";
 
 test("token works properly", () => {
     const x = Math.random() * 100;
