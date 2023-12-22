@@ -4,13 +4,11 @@ const express = require('express');
 
 const { encode, decode } = require('src/auth');
 const Database = require('src/database/database');
-
-const db = new Database();
-
 const {
   authorization, upload, jsonParser, isDemo,
-} = require('./middlewares');
+} = require('src/middlewares');
 
+const db = new Database();
 const router = express.Router();
 
 router.get('/', authorization, (req, res) => {
