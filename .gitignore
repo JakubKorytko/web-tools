@@ -126,7 +126,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-/server/*.db
+/server/src/database/*.db
 /server/files/*
 !/server/files/.gitkeep
 build/
