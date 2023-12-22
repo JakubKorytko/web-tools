@@ -1,6 +1,6 @@
 {
-  "short_name": "WebTools",
-  "name": "WebTools App",
+  "short_name": "web-tools",
+  "name": "web-tools",
   "icons": [
     {
       "src": "favicon.ico",
