@@ -1,6 +1,6 @@
 import { expect, test } from '@jest/globals';
 
-import Token from '../Token';
+import Token from 'src/components/Token';
 
 test('token works properly', () => {
   const x = Math.random() * 100;

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import Loader from '../components/Loader';
-import Token from '../components/Token';
+import Loader from 'src/components/Loader';
+import Token from 'src/components/Token';
 
-const settings = require('../settings.json');
+const settings = require('src/settings.json');
 
 const serverName = settings.serverData.name;
 

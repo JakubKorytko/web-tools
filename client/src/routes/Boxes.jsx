@@ -1,12 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 
-import 'bootstrap/dist/js/bootstrap.bundle';
-import linkImage from '../gfx/link.png';
-import folderImage from '../gfx/folder.png';
-import Navbar from '../components/Navbar';
+import Navbar from 'src/components/Navbar';
 
-import style from './Boxes.style';
+import style from 'src/routes/Boxes.style';
+
+import linkImage from 'src/gfx/link.png';
+import folderImage from 'src/gfx/folder.png';
 
 function BoxesPage() {
   return (

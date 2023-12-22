@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const isDemo = require('../settings.json').demo;
+const isDemo = require('src/settings.json').demo;
 
 function DeleteModal(props) {
   const { onDelete } = props;

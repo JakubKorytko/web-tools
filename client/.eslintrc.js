@@ -29,7 +29,48 @@ module.exports = {
         ],
     'import/order': ['error', {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+      pathGroups: [
+        {
+          pattern: 'src/components/**',
+          group: 'internal',
+          position: 'after',
+        },
+        {
+          pattern: 'src/routes/**',
+          group: 'internal',
+          position: 'after',
+        },
+        {
+          pattern: 'src/login/**',
+          group: 'internal',
+          position: 'after',
+        },
+        {
+          pattern: 'src/gfx/**',
+          group: 'internal',
+          position: 'after',
+        },
+        {
+          pattern: 'src/**',
+          group: 'internal',
+          position: 'after',
+        },
+        {
+          pattern: '**/*.css',
+          group: 'index',
+        },
+      ],
       'newlines-between': 'always',
     }],
+  },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['src', './src'],
+        ],
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
   },
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Token from './Token';
+import Token from 'src/components/Token';
 
 function BackButton(props) {
   const { back } = props;
 
   if (back) {
-    return <a className="navbar-brand backButton" href="./boxes">&lt;</a>;
+    return <a className="navbar-brand backButton" href="/boxes">&lt;</a>;
   }
   return null;
 }

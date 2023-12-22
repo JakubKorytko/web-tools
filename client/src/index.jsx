@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import {
   BrowserRouter, Route, Routes, useParams,
 } from 'react-router-dom';
 
-import BoxesPage from './routes/Boxes';
-import FilesPage from './routes/Files';
-import LoginPage from './routes/Login';
-import LinksPage from './routes/Links';
-import Authorization from './routes/Authorization';
+import Authorization from 'src/routes/Authorization';
+import BoxesPage from 'src/routes/Boxes';
+import FilesPage from 'src/routes/Files';
+import LoginPage from 'src/routes/Login';
+import LinksPage from 'src/routes/Links';
 
-const settings = require('./settings.json').serverData;
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'src/index.css';
+
+const settings = require('src/settings.json').serverData;
 
 function Url() {
   const { id } = useParams();

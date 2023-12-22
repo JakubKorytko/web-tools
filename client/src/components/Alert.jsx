@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Alert.style';
+import styles from 'src/components/Alert.style';
 
 function Alert(props) {
   const { variant, children } = props;

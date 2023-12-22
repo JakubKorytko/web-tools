@@ -5,7 +5,7 @@ import {
   afterEach, beforeEach, expect, test,
 } from '@jest/globals';
 
-import Navbar from '../Navbar';
+import Navbar from 'src/components/Navbar';
 
 let container = null;
 

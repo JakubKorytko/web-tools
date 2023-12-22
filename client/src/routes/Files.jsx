@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
 import { FileDrop } from 'react-file-drop';
 
-import uploadImage from '../gfx/upload.png';
-import Alert from '../components/Alert';
-import DeleteModal from '../components/DeleteModal';
-import Navbar from '../components/Navbar';
-import ClipboardButton from '../components/ClipboardButton';
-import './Files.style.css';
-import Token from '../components/Token';
+import Alert from 'src/components/Alert';
+import DeleteModal from 'src/components/DeleteModal';
+import Navbar from 'src/components/Navbar';
+import ClipboardButton from 'src/components/ClipboardButton';
+import Token from 'src/components/Token';
 
-import styles from './Files.style';
+import styles from 'src/routes/Files.style';
+import 'src/routes/Files.style.css';
 
-const settings = require('../settings.json');
+import uploadImage from 'src/gfx/upload.png';
+
+const settings = require('src/settings.json');
 
 const serverName = settings.serverData.name;
 const isDemo = settings.demo;

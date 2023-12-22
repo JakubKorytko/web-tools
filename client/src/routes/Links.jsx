@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
-import linkImage from '../gfx/link.png';
-import DeleteModal from '../components/DeleteModal';
-import Navbar from '../components/Navbar';
-import ClipboardButton from '../components/ClipboardButton';
-import Token from '../components/Token';
+import DeleteModal from 'src/components/DeleteModal';
+import Navbar from 'src/components/Navbar';
+import ClipboardButton from 'src/components/ClipboardButton';
+import Token from 'src/components/Token';
 
-import styles from './Links.style';
+import styles from 'src/routes/Links.style';
 
-const settings = require('../settings.json');
+import linkImage from 'src/gfx/link.png';
+
+const settings = require('src/settings.json');
 
 const serverName = settings.serverData.name;
 const isDemo = settings.demo;

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-import '../login/my-login.css';
-import '../login/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
-import '../login/my-login';
-import Token from '../components/Token';
+import Token from 'src/components/Token';
 
-import styles from './Login.style';
+import styles from 'src/routes/Login.style';
 
-const settings = require('../settings.json');
+import 'src/login/my-login.css';
+import 'src/login/my-login';
+import 'src/login/bootstrap.min.css';
+
+const settings = require('src/settings.json');
 
 const serverName = settings.serverData.name;
 
