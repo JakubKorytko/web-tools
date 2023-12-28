@@ -30,6 +30,7 @@
   - [Installation](#installation)
     - [Client installation](#client-installation)
     - [Server installation](#server-installation)
+  - [Sample user](#sample-user)
   - [Endpoints](#endpoints)
     - [Client endpoints](#client-endpoints)
       - [Client endpoints protected by authentication](#client-endpoints-protected-by-authentication)
@@ -110,6 +111,14 @@ In an era where the digital realm is vast and ever-expanding, managing links and
     ```
 
 **Note:** Both the client and the server apps need to be running for the project to work.
+
+## Sample user
+
+The app comes with a sample user that you can use to log in and test the app.\
+The user is hardcoded at the moment, but this will change in the future.
+
+- username: `stanley`
+- password: `qwerty123`
 
 ## Endpoints
 
