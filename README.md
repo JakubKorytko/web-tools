@@ -121,8 +121,11 @@ Running the apps will freeze the terminal until you stop them.
 The app comes with a sample user that you can use to log in and test the app.\
 The user is hardcoded at the moment, but this will change in the future.
 
-- username: `stanley`
+- username: `johndoe`
 - password: `qwerty123`
+
+To change the user credentials, edit the `server/src/auth.js` file.
+Set the value of `CREDENTIALS` (line 3) to base64-encoded `id|username|password` string.
 
 ## Endpoints
 
