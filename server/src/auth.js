@@ -1,9 +1,10 @@
 const jwt = require('jsonwebtoken');
 
+const CREDENTIALS = 'MXxqb2huZG9lfHF3ZXJ0eTEyMw==';
 const values = ['id', 'username', 'password'];
 
 const user = Object.fromEntries(
-  Buffer.from('MXxqb2huZG9lfHF3ZXJ0eTEyMw==', 'base64')
+  Buffer.from(CREDENTIALS, 'base64')
     .toString('utf-8')
     .split('|')
     .map((x, y) => [values[y], x]),
