@@ -71,6 +71,9 @@ In an era where the digital realm is vast and ever-expanding, managing links and
     cd web-tools
     ```
 
+**Note:** Install & run the client and the server apps (next steps) in separate terminals starting from the project directory.
+Running the apps will freeze the terminal until you stop them.
+
 ### Client installation
 
 1. Enter the client directory:
