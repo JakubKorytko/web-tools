@@ -9,10 +9,8 @@ import styles from 'src/routes/Links.style';
 
 import linkImage from 'src/gfx/link.png';
 
-const settings = require('src/settings.json');
-
-const serverName = settings.serverData.name;
-const isDemo = settings.demo;
+const serverName = process.env.REACT_APP_SERVER_URL;
+const isDemo = process.env.REACT_APP_DEMO === 'true';
 
 function LinksPage() {
   const [list, setList] = useState([]);

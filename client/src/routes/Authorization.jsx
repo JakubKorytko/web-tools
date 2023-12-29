@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
 import Loader from 'src/components/Loader';
 import Token from 'src/components/Token';
 
-const settings = require('src/settings.json');
-
-const serverName = settings.serverData.name;
+const serverName = process.env.REACT_APP_SERVER_URL;
 
 function Authorization(props) {
   const [res, setRes] = useState(undefined);

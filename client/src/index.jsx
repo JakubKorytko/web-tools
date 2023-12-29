@@ -14,18 +14,25 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'src/index.css';
 
-const settings = require('src/settings.json').serverData;
+const {
+  REACT_APP_SERVER_URL,
+  REACT_APP_FILE_URL_PATH,
+  REACT_APP_SHORT_URL_PATH,
+} = process.env;
+
+const shortUrl = REACT_APP_SERVER_URL + REACT_APP_SHORT_URL_PATH;
+const fileUrl = REACT_APP_SERVER_URL + REACT_APP_FILE_URL_PATH;
 
 function Url() {
   const { id } = useParams();
-  const url = `${settings.shortLink}${id}`;
+  const url = `${shortUrl}/${id}`;
   window.location.href = url || '/';
   return null;
 }
 
 function File() {
   const { id } = useParams();
-  const url = `${settings.fileLink}${id}`;
+  const url = `${fileUrl}/${id}`;
   window.location.href = url || '/';
   return null;
 }

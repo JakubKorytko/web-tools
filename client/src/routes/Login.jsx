@@ -8,9 +8,7 @@ import 'src/login/my-login.css';
 import 'src/login/my-login';
 import 'src/login/bootstrap.min.css';
 
-const settings = require('src/settings.json');
-
-const serverName = settings.serverData.name;
+const serverName = process.env.REACT_APP_SERVER_URL;
 
 function LoginPage() {
   document.body.classList.add('my-login-page');

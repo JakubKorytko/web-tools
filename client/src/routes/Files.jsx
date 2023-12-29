@@ -12,10 +12,8 @@ import 'src/routes/Files.style.css';
 
 import uploadImage from 'src/gfx/upload.png';
 
-const settings = require('src/settings.json');
-
-const serverName = settings.serverData.name;
-const isDemo = settings.demo;
+const serverName = process.env.REACT_APP_SERVER_URL;
+const isDemo = process.env.REACT_APP_DEMO === 'true';
 
 function FilesPage() {
   const [alertDisplay, setAlertDisplay] = useState(false);
