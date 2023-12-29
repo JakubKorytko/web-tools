@@ -38,6 +38,7 @@
       - [Server authentication protected endpoints](#server-authentication-protected-endpoints)
   - [Production build](#production-build)
   - [Tests](#tests)
+  - [Troubleshooting](#troubleshooting)
   - [Contributing](#contributing)
   - [Contact](#contact)
   - [License](#license)
@@ -204,6 +205,27 @@ npm test --prefix app
 ```
 
 Where `app` is the name of the directory containing the tests (either `client` or `server`)
+
+## Troubleshooting
+
+If you are using Windows or your git client converts line endings to CRLF,
+you may encounter the following error when trying to run the app:
+
+```bash
+error Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+```
+
+This is caused by the fact that the project uses the eslint.
+To fix this, you can either:
+
+- change the line endings to LF (recommended)
+  - by simply running `npm run eslint -- --fix` in the both `client` and `server` directories
+- disable (or change) the eslint rule
+  - read more about it [here](https://eslint.style/rules/js/linebreak-style)
+
+Note that if you change the line endings to LF and decide not to disable the eslint rule,
+your editor or git client may convert them back to CRLF.
+Make sure your editor and git config are set up correctly.
 
 ## Contributing
 
