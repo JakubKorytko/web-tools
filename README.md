@@ -30,6 +30,7 @@
   - [Installation](#installation)
     - [Client installation](#client-installation)
     - [Server installation](#server-installation)
+  - [Demo mode](#demo-mode)
   - [Sample user](#sample-user)
   - [Endpoints](#endpoints)
     - [Client endpoints](#client-endpoints)
@@ -82,6 +83,17 @@ Running the apps will freeze the terminal until you stop them.
     cd client
     ```
 
+1. Create `.env` file (or set environment variables manually):
+
+    ```bash
+    REACT_APP_SERVER_URL= # URL of the server app
+    REACT_APP_SHORT_URL_PATH= # path to the link shortening endpoint, e.g. /short
+    REACT_APP_FILE_URL_PATH= # path to the file hosting endpoint, e.g. /file
+    REACT_APP_DEMO= # true if you want to use the demo mode, false otherwise (see below)
+    ```
+
+    *Refer to the [`client/.env.example`](client/.env.example) file for an example.*
+
 1. Install dependencies:
 
     ```bash
@@ -102,6 +114,17 @@ Running the apps will freeze the terminal until you stop them.
     cd server
     ```
 
+1. Create `.env` file (or set environment variables manually):
+
+    ```bash
+    SECRET= # secret used to sign JWT tokens
+    PORT= # port on which the server will run
+    URI= # whole URI of the server, e.g. http://localhost:3000
+    DEMO= # true if you want to use the demo mode, false otherwise (see below)
+    ```
+
+    *Refer to the [`server/.env.example`](server/.env.example) file for an example.*
+
 1. Install dependencies:
 
     ```bash
@@ -115,6 +138,14 @@ Running the apps will freeze the terminal until you stop them.
     ```
 
 **Note:** Both the client and the server apps need to be running for the project to work.
+
+## Demo mode
+
+In the environment variables, you can set the `DEMO` (`REACT_APP_DEMO` in the client app) variable to `true` to use the demo mode.
+In the demo mode, many features are disabled (e.g. you cannot add new links or files to the database or delete existing ones).
+This setting is designed strictly for future demo of the repository and does not provide any real functionality.
+**You should always set it to `false` if you want to use the app normally.**
+This setting will have its default value set to `false` in one of the next patches so that you don't have to worry about it.
 
 ## Sample user
 
