@@ -12,6 +12,7 @@
 - Use only relative paths in multer & database
 - Add .env.example files
 - Add CHANGELOG.md
+- Add missing @popperjs/core client package
 
 ## [v0.1.0](https://github.com/JakubKorytko/web-tools/tree/0.1.0) - 2023-12-27
 
