@@ -54,7 +54,7 @@ router.post('/add', isDemo, authorization, jsonParser, async (req, res) => {
 });
 
 router.post('/addFile', isDemo, authorization, upload.single('file'), async (req, res) => {
-  await db.insert('files', req.file.path, req.body.link);
+  await db.insert('files', req.file.filename, req.body.link);
   res.send('ok');
 });
 
@@ -70,7 +70,7 @@ router.get('/file/*', async (req, res) => {
   if (src === '/') {
     res.redirect(src);
   } else {
-    res.download(path.join(__dirname, src));
+    res.download(path.join(__dirname, '..', 'files', src));
   }
 });
 

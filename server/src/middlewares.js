@@ -31,10 +31,10 @@ const authorization = (req, res, next) => {
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, './files');
+    cb(null, `${__dirname}/../files`);
   },
   filename(req, file, cb) {
-    if (fs.existsSync(path.join(`${__dirname}/files`, file.originalname))) {
+    if (fs.existsSync(path.join(`${__dirname}/../files`, file.originalname))) {
       cb(null, `${path.basename(file.originalname, path.extname(file.originalname))}(1)${path.extname(file.originalname)}`);
     } else {
       cb(null, file.originalname);
